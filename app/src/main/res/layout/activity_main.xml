@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/almostBlack"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/idTVSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@id/idTVSecondary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/idTVprimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:text=""
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="25dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+     style="@style/buttonRow">
+        <Button
+            android:id="@+id/bac"
+            android:text="AC"
+            android:onClick="allClearAction"
+            android:background="@color/almostBlack"
+            style="@style/buttonNumber"/>
+        <Button
+            android:id="@+id/bc"
+            android:text="DEL"
+            android:onClick="backSpaceAction"
+            android:background="@color/almostBlack"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            style="@style/buttonNumber"/>
+        <Button
+            android:id="@+id/bdiv"
+            android:background="@color/almostBlack"
+            android:text="/"
+            android:onClick="operationAction"
+            style="@style/buttonOperation"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:background="@color/almostBlack"
+            android:text="7"
+            android:onClick="numberAction"
+            android:id="@+id/btn_seven"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            android:text="8"
+            android:onClick="numberAction"
+            android:id="@+id/btn_eight"
+            style="@style/buttonNumber"/>
+        <Button
+
+            android:background="@color/almostBlack"
+            android:text="9"
+            android:onClick="numberAction"
+            android:id="@+id/btn_nine"
+            style="@style/buttonNumber"
+            />
+        <Button
+            android:id="@+id/bmul"
+            android:background="@color/almostBlack"
+            android:text="X"
+            android:onClick="operationAction"
+            style="@style/buttonOperation"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:background="@color/almostBlack"
+            android:text="4"
+            android:onClick="numberAction"
+            android:id="@+id/btn_four"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            android:text="5"
+            android:onClick="numberAction"
+            android:id="@+id/btn_five"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            android:text="6"
+            android:onClick="numberAction"
+            android:id="@+id/btn_six"
+            style="@style/buttonNumber"/>
+        <Button
+            android:id="@+id/bminus"
+            android:background="@color/almostBlack"
+            android:text="-"
+            android:onClick="operationAction"
+            style="@style/buttonOperation"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:id="@+id/btn_one"
+            android:background="@color/almostBlack"
+            android:text="1"
+            android:onClick="numberAction"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            android:text="2"
+            android:id="@+id/btn_two"
+            android:onClick="numberAction"
+            style="@style/buttonNumber"/>
+        <Button
+            android:background="@color/almostBlack"
+            android:id="@+id/btn_three"
+            android:text="3"
+            android:onClick="numberAction"
+            style="@style/buttonNumber"/>
+        <Button
+            android:id="@+id/bplus"
+            android:background="@color/almostBlack"
+            android:text="+"
+            android:onClick="operationAction"
+            style="@style/buttonOperation"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+        <Button
+            android:id="@+id/bdot"
+            android:background="@color/almostBlack"
+            android:text="."
+            android:onClick="operationAction"
+            style="@style/buttonNumber"/>
+        <Button
+            android:text="0"
+            android:onClick="numberAction"
+            android:id="@+id/btn_zero"
+            android:background="@color/almostBlack"
+            style="@style/buttonNumber"/>
+
+        <Button
+            android:id="@+id/bequal"
+            android:background="@color/orange"
+            android:layout_weight="2"
+            android:text="="
+            android:onClick="equalsAction"
+            style="@style/buttonNumber" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
